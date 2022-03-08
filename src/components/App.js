@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import StreamCreate from "./streams/StreamCreate";
 import StreamEdit from "./streams/StreamEdit";
 import StreamDelete from "./streams/StreamDelete";
@@ -15,6 +15,7 @@ const App = () => {
         <div>
           <Header />
           <Route exact path="/" element={<StreamList />}></Route>
+
           <Route exact path="/streams/new" element={<StreamCreate />}></Route>
           <Route
             exact
