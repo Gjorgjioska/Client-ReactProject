@@ -24,7 +24,7 @@ const App = () => {
           ></Route>
           <Route
             exact
-            path="/streams/delete"
+            path="/streams/delete:id"
             element={<StreamDelete />}
           ></Route>
           <Route exact path="/streams/show" element={<StreamShow />}></Route>
